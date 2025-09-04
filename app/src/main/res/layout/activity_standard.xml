@@ -2,42 +2,29 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".StandardActivity">
 
-    <!-- Text -->
+    <!-- TextView -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewStandard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_lab_week_02_c"
+        android:text="@string/hello_standard"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp"/>
 
-    <!-- Standard Button -->
+    <!-- Button -->
     <Button
         android:id="@+id/button_standard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/standard_button"
-        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textViewStandard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
-
-    <!-- Single Top Button -->
-    <Button
-        android:id="@+id/button_single_top"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/single_top_button"
-        app:layout_constraintTop_toBottomOf="@id/button_standard"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
